@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<style>
+				body{
+					background-color: #74DBEF;
+				} 
+				h1{
+					font-size: 40px;
+					font-family: Georgia;
+					text-align: center;
+				}
+				p{
+					font-size: 20px;
+					font-family: Georgia;
+					text-align: center;
+				}
+			</style>
+			<title>{{page_title}}</title>
+		</head>
+		<h1><u>Welcome to Fancy Drinks!</u></h1>
+		<body>
+			<form action="gresponse"method="get">
+			<p><b><label for="cocktail">Please enter the name of a cocktail:</label></b></p>
+			<p>Ex. bloody mary, moscow mule, tequila sunrise</p>
+			<p><input type="text"id="cocktail"name="cocktail"/><br/></p>
+			<p><input type="submit"value="Go"name="gobtn"/></form></p>
+			{% if prompt %}
+				<p><div class= 'formtitle'>{{prompt}}</div></p>
+			{% endif %}
+			<br><br><br>
+
+			<form action="gresponseingred"method="get">
+			<p><b><label for="ingredient">Enter the ingredient that you want in your drink: </label></b></p>
+			<p>Ex. vodka, gin, apple</p>
+			<p><input type="text"id="ingredient"name="ingredient"/><br/></p>
+			<p><input type="submit"value="Go"name=gobtn"/></form></p>
+			{% if promptingr %}
+				<p><div class= 'formtitle'>{{promptingr}}</div></p>
+			{% endif %}
+			<br><br><br><br><br><br>
+			Used API from thecocktaildb.com
+		</body>
+	</html>

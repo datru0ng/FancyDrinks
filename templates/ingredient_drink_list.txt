@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			table {
+  				border-collapse: collapse;
+  				border-spacing: 0;
+				width: 260px;
+				height: 400px;
+  				border: 2.5px solid #0f0f0f;
+				background-color: #74DBEF;
+				float:left;
+			}
+			th, td {
+  				padding: 16px;
+			}
+			body {
+				background-color: #5E88FC;
+			}
+			p {
+				font-size: 20px;
+				font-family: Georgia;
+			}
+			h1 {
+				font-size: 40px;
+				font-family: Georgia;
+				text-align: center;
+				
+			}
+		</style>
+		<title>{{page_title}}</title>
+	</head>
+	<h1><u>Drinks Containing: {{ingred}}</u></h1>
+	<body>	
+		{% for name in range(0,len) %}
+			<table>
+			<tr><th>
+			<img src = "{{images[name]}}" alt = "{{lst[name]}}"><br>
+			<a href="gresponse?cocktail={{lst[name]}}"><p>Recipe: {{lst[name]}}</p></a>
+			</th></tr>
+			</table>
+		{% endfor %}
+	</body>
+</html>
+

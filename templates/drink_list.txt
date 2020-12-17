@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<style>
+				body{
+					background-color: #74DBEF;
+				} 
+				h1{
+					font-size: 40px;
+					font-family: Georgia;
+					text-align: center;
+				}
+				p{
+					font-size: 20px;
+					font-family: Georgia;
+					text-align: center;
+			</style>
+			<title>{{page_title}}</title>
+		</head>
+		<body>
+			<h1><u>{{drink}}</u></h1>
+			<center><img src={{images}}><center>
+			<p>{{ingred}}</p>
+			<p>{{instruct}}</p>
+			<p><b>Enjoy!!!</b></p>
+			<p><a href='/'>Search for another drink?</a></p>
+		</body>
+	</html>
