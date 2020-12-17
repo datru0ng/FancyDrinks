@@ -26,7 +26,7 @@
 			<p><input type="text"id="cocktail"name="cocktail"/><br/></p>
 			<p><input type="submit"value="Go"name="gobtn"/></form></p>
 			{% if prompt %}
-				<p><div class= 'formtitle'>{{prompt}}</div></p>
+				<div class= 'formtitle'><p>{{prompt}}</p></div></p>
 			{% endif %}
 			<br><br><br>
 
@@ -36,7 +36,7 @@
 			<p><input type="text"id="ingredient"name="ingredient"/><br/></p>
 			<p><input type="submit"value="Go"name=gobtn"/></form></p>
 			{% if promptingr %}
-				<p><div class= 'formtitle'>{{promptingr}}</div></p>
+				<div class= 'formtitle'><p>{{promptingr}}</p></div>
 			{% endif %}
 			<br><br><br><br><br><br>
 			Used API from thecocktaildb.com
